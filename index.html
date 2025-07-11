@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juantube</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <!-- Substitua esse src pela imagem correta do seu projeto -->
+      <img src="/Sem_título-removebg-preview.png" alt="Logo Juantube" class="logo-img" />
+    </div>
+    
+    <form action="/buscar" method="GET" class="search-form">
+      <input type="text" name="q" placeholder="Pesquisar..." />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="icones-header">
+      <span title="Notificações">🔔</span>
+      <span title="Perfil do usuário">👤</span>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Menu lateral -->
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Em alta</a></li>
+        <li><a href="#">Inscrições</a></li>
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Histórico</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section class="video-principal">
+        <!-- Embed de vídeo funcional -->
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/uxpDa-c-4Mc"
+                title="Drake - Hotline Bling"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+
+        <h2>Drake - Hotline Bling</h2>
+
+        <div class="canal-info">
+          <p>Drake</p>
+          <button>Inscrever-se</button>
+        </div>
+
+        <p>2.079.596.363 visualizações • 26 de out. de 2015</p>
+
+        <div class="botoes-interacao">
+          <button>Juainha 👍</button>
+          <button>Disjuainha 👎</button>
+          <button>Compartilhar 🔗</button>
+          <button>Salvar 💾</button>
+        </div>
+
+        <div class="descricao">
+          <h3>Descrição</h3>
+          <p>
+            Hotline Bling (Official Video)<br>
+            Disponível para download: 
+            <a href="http://republicrec.co/DrakeHotlineBling" target="_blank">republicrec.co/DrakeHotlineBling</a><br><br>
+
+            Ouça no Spotify: 
+            <a href="https://open.spotify.com/track/6nmz4i" target="_blank">Spotify</a><br><br>
+
+            Direção: Director X<br>
+            Produção: Evan Landry<br>
+            Edição: Laura McMillan<br>
+            Produtora: Creative Soul<br><br>
+
+            © 2015 Cash Money Records Inc.
+          </p>
+        </div>
+
+        <section class="comentarios">
+          <h3>Comentários</h3>
+          <form>
+            <textarea rows="4" cols="50" placeholder="Adicione um comentário..."></textarea><br />
+            <button type="submit">Comentar</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <!-- Vídeos recomendados -->
+    <aside class="recomendados">
+      <h3>Vídeos Recomendados</h3>
+      <ul>
+        <li>
+          <img src="original.avif" alt="Miniatura de God's Plan" />
+          <p>God's Plan</p>
+          <p>Drake</p>
+        </li>
+        <li>
+          <img src="maxresdefault1.jpg" alt="Miniatura de Toosie Slide" />
+          <p>Drake - Toosie Slide</p>
+          <p>Drake</p>
+        </li>
+        <li>
+          <img src="maxresdefault.jpg" alt="Miniatura de Gunna" />
+          <p>Drake, Lil Baby, Gunna - Gunna</p>
+          <p>Gunna</p>
+        </li>
+      </ul>
+    </aside>
+
+  </div> <!-- fim container -->
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Sobre | Termos | Contato</p>
+    <p>Este é um projeto fictício criado para fins didáticos.</p>
+  </footer>
+
+</body>
+</html>

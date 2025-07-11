@@ -1,0 +1,288 @@
+/* Fonte e cores gerais */
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container geral */
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .logo-img {
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  .search-form {
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    display: flex;
+  }
+  
+  .search-form input[type="text"] {
+    flex-grow: 1;
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+  }
+  
+  .search-form button {
+    padding: 6px 15px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #cc0000;
+  }
+  
+  .icones-header span {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  /* Menu lateral */
+  .menu-lateral {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-lateral li {
+    margin-bottom: 15px;
+  }
+  
+  .menu-lateral a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-lateral a:hover {
+    color: #ff0000;
+    cursor: pointer;
+  }
+  
+  /* Área principal */
+  main {
+    flex-grow: 1;
+  }
+  
+  .video-principal iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .video-principal h2 {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .canal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .canal-info p {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .canal-info button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .canal-info button:hover {
+    background-color: #cc0000;
+  }
+  
+  .botoes-interacao {
+    margin: 15px 0;
+  }
+  
+  .botoes-interacao button {
+    margin-right: 10px;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .botoes-interacao button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .descricao {
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  .comentarios textarea {
+    width: 100%;
+    max-width: 560px;
+    resize: vertical;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .comentarios button {
+    margin-top: 8px;
+    padding: 6px 14px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comentarios button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Barra lateral com vídeos recomendados */
+  .recomendados {
+    width: 280px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .recomendados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .recomendados li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .recomendados li:hover {
+    background-color: #eee;
+  }
+  
+  .recomendados img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .recomendados p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .menu-lateral,
+    .recomendados {
+      width: 100%;
+      border: none;
+      padding: 10px 0;
+    }
+    
+    main {
+      width: 100%;
+    }
+    
+    .video-principal iframe,
+    .comentarios textarea {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .search-form {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
